@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #fff;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
+
+/* skill */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --marquee-width: 80vw;
+    --marquee-height: 20vh;
+    /* --marquee-elements: 12; */
+    /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    background-color: #192135;
+    /*color: #eee;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #0f172a 0%, transparent 100%);
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #0f172a 0%, transparent 100%);
+}
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+    }
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4);
+    /* 5rem; */
+    white-space: nowrap;
+}
+
+.marquee-content li img {
+    width: 100%;
+    /* height: 100%; */
+    border: 2px solid #eee;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --marquee-width: 80vw;
+        --marquee-height: 16vh;
+        --marquee-elements-displayed: 3;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    :root {
+        --marquee-width: 80vw;
+        --marquee-height: 16vh;
+        --marquee-elements-displayed: 2;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
+}
+
+/* Back to top */
+.top-pointer {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .top-pointer {
+        right: 5px;
+        bottom: 5px;
+    }
+}
+
+
+/* Apply styles to the autofill state */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #1e293b inset !important;
+    /* #1e293b corresponds to bg-slate-900 */
+    box-shadow: 0 0 0px 1000px #1e293b inset !important;
+    /* #1e293b corresponds to bg-slate-900 */
+    -webkit-text-fill-color: #fff !important;
+    /* Ensures the text color remains white */
+    transition: background-color 5000s ease-in-out 0s;
+    /* Prevents background change */
+}
+
+/* Main screen social icon */
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #4f46e5;
+    /* Indigo color on hover */
+}
+
+/* Navbar screen */
+.active-link {
+    color: #4f46e5;
+    /* Indigo */
+    border-bottom: 2px solid #4f46e5;
+    /* Underline active link */
+}

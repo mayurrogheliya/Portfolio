@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Rogheliya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2aec9589fd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-slate-900 text-white" aria-label="Main Navigation">
+
+    <!-- Back to Top Button -->
+    <a href="#" title="Back to top" class="top-pointer" aria-label="Back to top">
+        <img src="img/arrow.png" style="filter: invert(1); width: 30px;" alt="Back to top">
+    </a>
+
+    <!-- Navbar -->
+    <nav class="border-b border-gray-800">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <h1 class="text-2xl translate-x-1 font-lora">
+                <span class="text-orange-600">M</span>ayur <span class="text-orange-600">R</span>ogheliya
+            </h1>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 dark:text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 rounded active-link md:hover:bg-transparent md:border-0 md:hover:text-indigo-500 md:p-0 text-white hover:bg-gray-700 hover:text-indigo-500">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about-me"
+                            class="block py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:hover:text-indigo-500 md:p-0 dark:text-white hover:bg-gray-700 hover:text-indigo-500">About</a>
+                    </li>
+                    <li>
+                        <a href="#skill"
+                            class="block py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:hover:text-indigo-500 md:p-0 dark:text-white hover:bg-gray-700 hover:text-indigo-500">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#project"
+                            class="block py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:hover:text-indigo-500 md:p-0 dark:text-white hover:bg-gray-700 hover:text-indigo-500">Project</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me"
+                            class="block py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:hover:text-indigo-500 md:p-0 dark:text-white hover:bg-gray-700 hover:text-indigo-500">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <section class="text-slate-400 body-font">
+            <div class="container mx-auto flex px-5 py-6 items-center justify-center flex-col">
+                <img class="lg:w-80 lg:h-80 md:w-72 md:h-72 w-60 h-60 object-cover object-center outline outline-offset-4 outline-orange-700 rounded-full"
+                    alt="Profile Picture" src="./img/me2.jpeg" width="240" height="240">
+                <div class="text-center lg:w-2/3 w-full mt-8">
+                    <h1 class="text-2xl text-white mb-1 font-lora">Hello I'm</h1>
+                    <h1 class="text-4xl text-white mb-3 font-lora">Mayur Rogheliya</h1>
+                    <h2 class="text-2xl text-slate-400 mb-3">
+                        I am <span id="role" class="text-indigo-500">Fullstack Developer</span><span
+                            class="cursor"></span>
+                    </h2>
+                    <p class="text-lg text-slate-400 mt-4 italic">
+                        Passionate MERN Stack Developer | Lifelong Learner | Tech Enthusiast
+                    </p>
+                    <div class="flex justify-center mt-4 gap-2 flex-wrap">
+                        <a href="img/MyResume.pdf" target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                Resume
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex justify-center mt-5 space-x-5">
+                        <a href="https://www.linkedin.com/in/mayur-rogheliya/" target="_blank" rel="noopener noreferrer"
+                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mayurrogheliya" target="_blank" rel="noopener noreferrer"
+                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/MayurRogheliya" target="_blank" rel="noopener noreferrer"
+                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            aria-label="X (Twitter) Profile">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://hashnode.com/@mrogheliya18" target="_blank" rel="noopener noreferrer"
+                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            aria-label="Hashnode Profile">
+                            <i class="fab fa-hashnode"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- about -->
+    <section id="about-me" class="text-slate-400 body-font">
+        <div class="container px-5 pb-12 pt-8  mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="text-3xl font-bold title-font text-white">
+                    <span class="border-b-4 rounded-md border-blue-500 inline-block">About</span>
+                </h1>
+            </div>
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                    <path
+                        d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                    </path>
+                </svg>
+                <div class="text-start">
+                    <p class="leading-relaxed text-lg mb-6">
+                        Hello, I'm <span class="font-semibold text-white">Mayur Rogheliya</span>, a passionate and
+                        dedicated
+                        web
+                        developer
+                        with a solid foundation in web technologies. My academic journey has equipped me with a strong
+                        theoretical background, and I am eager to apply these skills in practical, real-world scenarios.
+                        I
+                        am
+                        actively seeking an opportunity to work with a reputable company where I can contribute
+                        effectively
+                        and
+                        continue to grow as a professional.
+                    </p>
+                    <p class="leading-relaxed text-lg mb-6">
+                        My short-term goal is to secure a position in a dynamic organization where I can make a
+                        meaningful
+                        impact. In the long term, I aspire to become a responsible and knowledgeable professional,
+                        achieving
+                        a significant position that allows me to build a successful career while contributing to the
+                        company's success.
+                    </p>
+                    <p class="leading-relaxed text-lg">
+                        I am committed to continuous learning and setting new challenges for myself, approaching every
+                        task
+                        with passion and dedication. I believe that with hard work and a positive attitude, I can
+                        achieve my
+                        goals and help drive the success of the team I am part of. Feel free to <a href="#contact-me"
+                            class="text-blue-500 hover:underline">connect with me</a> to discuss potential
+                        collaborations or
+                        opportunities.
+                    </p>
+                </div>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section id="skill" class="text-slate-400 body-font">
+        <div class="container px-5 pb-12 pt-8  mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="text-3xl font-bold title-font text-white">
+                    <span class="border-b-4 rounded-md border-blue-500 inline-block">Skills</span>
+                </h1>
+            </div>
+            <div class="marquee mx-auto">
+                <ul class="marquee-content">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js-square"></i></li>
+                    <li><i class="fab fa-bootstrap"></i></li>
+                    <li><i class="fab fa-java"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-node"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- project -->
+    <section id="project" class="text-slate-400 body-font">
+        <div class="container px-5 pb-12 pt-8 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="text-3xl font-bold title-font text-white">
+                    <span class="border-b-4 rounded-md border-blue-500 inline-block">Projects</span>
+                </h1>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div
+                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                    <img class="w-full h-48 object-cover" src="img/ieducation.jpg" alt="Project Image">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-white mb-2">iEducation</h2>
+                        <p class="text-slate-300 text-base mb-4">
+                            iEducation is a comprehensive educational platform. It offers a range of features including
+                            dynamic course content, an admin panel for management, course reviews and
+                            ratings, interactive quizzes, and Razorpay integration for secure payments. The platform is
+                            designed to enhance the lear.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
+                            <span
+                                class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Bootstrap</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span
+                                class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">PHP</span>
+                            <span
+                                class="bg-teal-100 text-teal-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">MySQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/mayurrogheliya/iEducation" target="_blank"
+                                rel="noopener noreferrer" aria-label="View Project on GitHub"
+                                class="text-blue-400 hover:text-blue-600 font-medium flex items-center bg-slate-800 p-2 rounded-md transition-colors duration-300">
+                                View Project on GitHub
+                                <i class="fa-brands fa-github text-lg ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div
+                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                    <img class="w-full h-48 object-cover" src="img/textutils.png" alt="Project Image">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-white mb-2">TextUtils</h2>
+                        <p class="text-slate-300 text-base mb-4">
+                            TextUtils is a React.js-based text manipulation and readability analysis tool. Features
+                            include text and character
+                            counting, text preview, dark mode, converting text to uppercase and lowercase, copying text,
+                            and removing extra spaces.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
+                            <span
+                                class="bg-teal-100 text-teal-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Bootstrap</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span
+                                class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/mayurrogheliya/TextUtils" target="_blank"
+                                rel="noopener noreferrer" aria-label="View Project on GitHub"
+                                class="text-blue-400 hover:text-blue-600 font-medium flex items-center bg-slate-800 p-2 rounded-md transition-colors duration-300">
+                                View Project on GitHub
+                                <i class="fa-brands fa-github text-lg ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div
+                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                    <img class="w-full h-48 object-cover" src="img/newslio.jpg" alt="Project Image">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-white mb-2">NewsLio</h2>
+                        <p class="text-slate-300 text-base mb-4">
+                            NewsLio is a dynamic platform that delivers the latest news from various sources, offering a
+                            responsive and interactive
+                            user experience. It features real-time data fetching, a user-friendly interface, and visual
+                            indicators to show the
+                            status of content loading.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
+                            <span
+                                class="bg-teal-100 text-teal-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Bootstrap</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span
+                                class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/mayurrogheliya/NewsLio"
+                                class="text-blue-400 hover:text-blue-600 font-medium flex items-center bg-slate-800 p-2 rounded-md transition-colors duration-300">
+                                View Project on GitHub
+                                <i class="fa-brands fa-github text-lg ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact-me" class="text-slate-400 body-font">
+        <div class="container px-5 pb-12 pt-8 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="text-3xl font-bold title-font text-white">
+                    <span class="border-b-4 rounded-md border-blue-500 inline-block">Contact Me</span>
+                </h1>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="0e7569a1-c778-4d80-9973-d8e14d28e36c">
+                    <input type="hidden" name="subject" value="New Submission from your Website" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-slate-400">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-slate-900 rounded border-2 border-slate-700 focus:border-indigo-500 focus:bg-slate-900 text-base outline-none text-white py-1 px-2 leading-8 duration-200 ease-in-out"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-slate-400">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-slate-900 rounded border-2 border-slate-700 focus:border-indigo-500 focus:bg-slate-900 text-base outline-none text-white py-1 px-2 leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="subject" class="leading-7 text-sm text-slate-400">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    class="w-full bg-slate-900 rounded border-2 border-slate-700 focus:border-indigo-500 focus:bg-slate-900 text-base outline-none text-white py-1 px-2 resize-none leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-slate-400">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-slate-900 rounded border-2 border-slate-700 focus:border-indigo-500 focus:bg-slate-900 h-32 text-base outline-none text-white py-1 px-2 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                        </div>
+                        <p class="text-base text-center text-gray-500 px-2" id="result"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="flex flex-col items-center bg-slate-800 text-center text-surface text-white">
+        <div class="container">
+            <!-- Social media icons container -->
+            <div class="m-4 flex justify-center space-x-4">
+                <a href="https://github.com/mayurrogheliya" target="_blank" type="button"
+                    class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none focus:ring-0"
+                    data-twe-ripple-init>
+                    <li class="list-none text-2xl w-5 h-5 flex justify-center items-center"><i
+                            class="fab fa-github"></i></li>
+                </a>
+
+                <a href="https://x.com/MayurRogheliya" target="_blank" type="button"
+                    class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none focus:ring-0"
+                    data-twe-ripple-init>
+                    <li class="list-none text-2xl w-5 h-5 flex justify-center items-center"><i
+                            class="fab fa-x-twitter"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mayur-rogheliya/" target="_blank" type="button"
+                    class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none focus:ring-0 "
+                    data-twe-ripple-init>
+                    <li class="list-none text-2xl w-5 h-5 flex justify-center items-center"><i
+                            class="fab fa-linkedin-in"></i>
+                    </li>
+                </a>
+
+                <a href="https://hashnode.com/@mrogheliya18" target="_blank" type="button"
+                    class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none focus:ring-0 "
+                    data-twe-ripple-init>
+                    <li class="list-none text-2xl w-5 h-5 flex justify-center items-center"><i
+                            class="fab fa-hashnode"></i>
+                    </li>
+                </a>
+            </div>
+        </div>
+
+        <!-- Copyright section -->
+        <div class="w-full bg-black/5 p-4 text-center">
+            © 2024 Mayur Rogheliya All rights reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
