@@ -1,5 +1,3 @@
-const accesskey = process.env.ACCESS_KEY;
-
 // navbar
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
