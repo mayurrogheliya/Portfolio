@@ -69,6 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
             top: 0,
             behavior: 'smooth'
         });
+
+        const homeLink = document.querySelector('a.home');
+        console.log(homeLink);
+        homeLink.classList.add('active-link');
+
+        navLinks.forEach(link => {
+            if (link !== homeLink) {
+                link.classList.remove('active-link');
+            }
+        });
     });
 
     // Marquee functionality
