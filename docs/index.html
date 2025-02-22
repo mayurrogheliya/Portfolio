@@ -13,12 +13,13 @@
     <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-slate-900 text-white" aria-label="Main Navigation">
 
     <!-- Back to Top Button -->
-    <a href="#" title="Back to top" class="top-pointer" aria-label="Back to top">
+    <a href="#" title="Back to top" class="top-pointer animate-bounce" aria-label="Back to top">
         <img src="img/arrow.png" style="filter: invert(1); width: 30px;" alt="Back to top">
     </a>
 
@@ -66,9 +67,9 @@
     <div id="main">
         <section class="text-slate-400 body-font">
             <div class="container mx-auto flex px-5 py-10 items-center justify-center flex-col">
-                <img class="lg:w-80 lg:h-80 md:w-72 md:h-72 w-60 h-60 object-cover object-top outline outline-offset-4 outline-yellow-100  rounded-full"
-                    alt="Profile Picture" src="img/me.jpg" width="240" height="240">
-                <div class="text-center lg:w-2/3 w-full mt-8">
+                <img class="lg:w-80 lg:h-80 md:w-72 md:h-72 w-60 h-60 object-cover object-top outline outline-offset-4 outline-yellow-100 rounded-full"
+                    alt="Profile Picture" src="img/me.jpg" width="240" height="240" data-aos="zoom-in">
+                <div class="text-center lg:w-2/3 w-full mt-8" data-aos="fade-up">
                     <h1 class="text-2xl text-white mb-1 font-lora">Hello I'm</h1>
                     <h1 class="text-4xl text-white mb-3 font-lora">Mayur Rogheliya</h1>
                     <h2 class="text-2xl text-slate-400 mb-3">
@@ -81,29 +82,29 @@
                     <div class="flex justify-center mt-4 gap-2 flex-wrap">
                         <a href="img/MyResume.pdf" target="_blank" rel="noopener noreferrer">
                             <button
-                                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:scale-105 transition-transform duration-300 rounded text-lg">
                                 Resume
                             </button>
                         </a>
                     </div>
-                    <div class="flex justify-center mt-5 space-x-5">
+                    <div class="flex justify-center mt-4 space-x-5">
                         <a href="https://www.linkedin.com/in/mayur-rogheliya/" target="_blank" rel="noopener noreferrer"
-                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            class="text-slate-400 hover:text-indigo-500 text-2xl social-icon transition-transform duration-300 hover:scale-125"
                             aria-label="LinkedIn Profile">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com/mayurrogheliya" target="_blank" rel="noopener noreferrer"
-                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            class="text-slate-400 hover:text-indigo-500 text-2xl social-icon transition-transform duration-300 hover:scale-125"
                             aria-label="GitHub Profile">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://x.com/MayurRogheliya" target="_blank" rel="noopener noreferrer"
-                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            class="text-slate-400 hover:text-indigo-500 text-2xl social-icon transition-transform duration-300 hover:scale-125"
                             aria-label="X (Twitter) Profile">
                             <i class="fab fa-x-twitter"></i>
                         </a>
                         <a href="https://hashnode.com/@mrogheliya18" target="_blank" rel="noopener noreferrer"
-                            class="text-slate-400 hover:text-indigo-500 text-xl social-icon"
+                            class="text-slate-400 hover:text-indigo-500 text-2xl social-icon transition-transform duration-300 hover:scale-125"
                             aria-label="Hashnode Profile">
                             <i class="fab fa-hashnode"></i>
                         </a>
@@ -116,20 +117,20 @@
     <!-- about -->
     <section id="about-me" class="text-slate-400 body-font">
         <div class="container px-5 pb-12 pt-8  mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
+            <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
                 <h1 class="text-3xl font-bold title-font text-white">
                     <span class="border-b-4 rounded-md border-blue-500 inline-block">About</span>
                 </h1>
             </div>
-            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center" data-aos="fade-up" data-aos-delay="300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                    class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                    class="inline-block w-8 h-8 text-gray-400 mb-8 animate-bounce" viewBox="0 0 975.036 975.036">
                     <path
                         d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                     </path>
                 </svg>
                 <div class="text-start">
-                    <p class="leading-relaxed text-lg mb-6">
+                    <p class="leading-relaxed text-lg mb-6 about-text">
                         Hello, I'm <span class="font-semibold text-white">Mayur Rogheliya</span>, a passionate and
                         dedicated
                         web
@@ -143,7 +144,7 @@
                         and
                         continue to grow as a professional.
                     </p>
-                    <p class="leading-relaxed text-lg">
+                    <p class="leading-relaxed text-lg about-text">
                         I am committed to continuous learning and setting new challenges for myself, approaching every
                         task
                         with passion and dedication. I believe that with hard work and a positive attitude, I can
@@ -154,7 +155,7 @@
                         opportunities.
                     </p>
                 </div>
-                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8"></span>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 animate-pulse"></span>
             </div>
         </div>
     </section>
@@ -162,12 +163,12 @@
     <!-- Skill -->
     <section id="skill" class="text-slate-400 body-font">
         <div class="container px-5 pb-12 pt-8  mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
+            <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
                 <h1 class="text-3xl font-bold title-font text-white">
                     <span class="border-b-4 rounded-md border-blue-500 inline-block">Skills</span>
                 </h1>
             </div>
-            <div class="marquee mx-auto">
+            <div class="marquee mx-auto" data-aos="fade-up">
                 <ul class="marquee-content">
                     <li><i class="fab fa-html5"></i></li>
                     <li><i class="fab fa-css3-alt"></i></li>
@@ -194,11 +195,11 @@
                     <span class="border-b-4 rounded-md border-blue-500 inline-block">Projects</span>
                 </h1>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Budget Tracker -->
-                <div
-                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                <div class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700"
+                    data-aos="flip-left">
                     <img class="w-full h-48 object-cover" src="img/budget-tracker.png" alt="Project Image">
                     <div class="p-6">
                         <h2 class="text-2xl font-bold text-white mb-2">Budget Tracker</h2>
@@ -247,8 +248,8 @@
                 </div>
 
                 <!-- iEducation -->
-                <div
-                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                <div class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700"
+                    data-aos="flip-right">
                     <img class="w-full h-48 object-cover" src="img/ieducation.png" alt="Project Image">
                     <div class="p-6">
                         <h2 class="text-2xl font-bold text-white mb-2">iEducation</h2>
@@ -289,8 +290,8 @@
                 </div>
 
                 <!-- TextUtils -->
-                <div
-                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                <div class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700"
+                    data-aos="flip-left">
                     <img class="w-full h-48 object-cover" src="img/textutils.png" alt="Project Image">
                     <div class="p-6">
                         <h2 class="text-2xl font-bold text-white mb-2">TextUtils</h2>
@@ -329,8 +330,8 @@
                 </div>
 
                 <!-- NewsLio -->
-                <div
-                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                <div class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700"
+                    data-aos="flip-right">
                     <img class="w-full h-48 object-cover" src="img/newslio.png" alt="Project Image">
                     <div class="p-6">
                         <h2 class="text-2xl font-bold text-white mb-2">NewsLio</h2>
@@ -364,8 +365,8 @@
                 </div>
 
                 <!-- QuickExit -->
-                <div
-                    class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                <div class="max-w-sm mx-auto bg-slate-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-slate-700"
+                    data-aos="flip-left">
                     <img class="w-full h-48 object-fill" src="img/quickexit.png" alt="Project Image">
                     <div class="p-6">
                         <h2 class="text-2xl font-bold text-white mb-2">QuickExit</h2>
@@ -396,11 +397,12 @@
 
 
     <!-- contact -->
-    <section id="contact-me" class="text-slate-400 body-font">
+    <section id="contact-me" class="text-slate-400 body-font" data-aos="fade-up">
         <div class="container px-5 pb-12 pt-8 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
                 <h1 class="text-3xl font-bold title-font text-white">
-                    <span class="border-b-4 rounded-md border-blue-500 inline-block">Contact Me</span>
+                    <span class="border-b-4 rounded-md border-blue-500 inline-block" data-aos="zoom-in">Contact
+                        Me</span>
                 </h1>
             </div>
             <div class="lg:w-1/2 md:w-2/3 mx-auto">
@@ -410,7 +412,7 @@
                     <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
                     <div class="flex flex-wrap -m-2">
-                        <div class="p-2 w-1/2">
+                        <div class="p-2 w-1/2" data-aos="fade-up">
                             <div class="relative">
                                 <label for="name" class="leading-7 text-sm text-slate-400">Name</label>
                                 <input type="text" id="name" name="name"
@@ -418,7 +420,7 @@
                                     required>
                             </div>
                         </div>
-                        <div class="p-2 w-1/2">
+                        <div class="p-2 w-1/2" data-aos="fade-up">
                             <div class="relative">
                                 <label for="email" class="leading-7 text-sm text-slate-400">Email</label>
                                 <input type="email" id="email" name="email"
@@ -426,7 +428,7 @@
                                     required>
                             </div>
                         </div>
-                        <div class="p-2 w-full">
+                        <div class="p-2 w-full" data-aos="fade-up">
                             <div class="relative">
                                 <label for="subject" class="leading-7 text-sm text-slate-400">Subject</label>
                                 <input type="text" id="subject" name="subject"
@@ -434,7 +436,7 @@
                                     required>
                             </div>
                         </div>
-                        <div class="p-2 w-full">
+                        <div class="p-2 w-full" data-aos="fade-up">
                             <div class="relative">
                                 <label for="message" class="leading-7 text-sm text-slate-400">Message</label>
                                 <textarea id="message" name="message"
@@ -442,7 +444,7 @@
                                     required></textarea>
                             </div>
                         </div>
-                        <div class="p-2 w-full">
+                        <div class="p-2 w-full" data-aos="zoom-in">
                             <button
                                 class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
                         </div>
@@ -500,7 +502,18 @@
 
     <script src="./script.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        gsap.from("#about-me", { opacity: 0, y: 50, duration: 1, ease: "power2.out" });
+        gsap.from(".about-text", { opacity: 0, y: 30, duration: 1, delay: 0.5, stagger: 0.3 });
+    </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, easing: "ease-in-out"
+        });
+    </script>
 </body>
 
 </html>
