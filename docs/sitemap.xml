@@ -6,28 +6,4 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://mayurrogheliya.netlify.app/#about</loc>
-        <lastmod>2025-02-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mayurrogheliya.netlify.app/#skills</loc>
-        <lastmod>2025-02-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mayurrogheliya.netlify.app/#projects</loc>
-        <lastmod>2025-02-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mayurrogheliya.netlify.app/#contact-me</loc>
-        <lastmod>2025-02-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
 </urlset>
