@@ -1,3 +1,4 @@
+document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
     // Navbar functionality
     const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
